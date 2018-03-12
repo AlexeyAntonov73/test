@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite" allow-return-values="false">
+    <test name="LoginPageTest">
+        <parameter name="browserName" value="chrome"/>
+        <parameter name="timeoutValue" value="10"/>
+        <parameter name="webUrl" value="http://www.1gl.ru/"/>
+        <parameter name="userLogin" value="autoUser@mailinator.com"/>
+        <parameter name="userPassword" value="autoPass"/>
+        <classes>
+            <class name="tests.SearchTest"/>
+        </classes>
+    </test>
+</suite>
